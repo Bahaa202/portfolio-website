@@ -1,9 +1,11 @@
 import { profile } from "../data/portfolio";
+import profileImg from "../assets/profile.jpg";
 
 function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
+        <img src={profileImg} alt={profile.name} className="hero-photo" />
         <p className="eyebrow">Hi, I'm</p>
         <h1>{profile.name}</h1>
         <p className="hero-title">{profile.title}</p>
